@@ -19,7 +19,7 @@ A new  preventative aides drug (triUmpsal) is under test in clinical trials. Con
 
 $H_0$: The drug triUmpsal is Effective only to the DrugUsers
 
-$H_0$: The drug triUmpsal is not effective to only the DrugUsers
+$H_A$: The drug triUmpsal is not effective to only the DrugUsers
 
 
 # Methods
@@ -33,6 +33,15 @@ treatment - Categorical
 DrugUser - Categorical
 
 infected - Categorical
+
+Infected depends on treatment among drug users
+
+We get just the DrugUsers from the population
+
+```{r}
+ drugUsersData = select(triUmp, treatment, DrugUser, infected)
+ drugUsersData = filter (drugUsersData, DrugUser == 'yes')
+```
 
 # Results
 
