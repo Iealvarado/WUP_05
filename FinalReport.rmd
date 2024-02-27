@@ -59,7 +59,7 @@ barchartGC(~infected + treatment,data=drugUsersData, type="percent")
 
 ```
 
-
+By looking at the graph there is a difference between the drug and the Placebo. looking at the graph Placebo is most effective.
 
 ### Numerical Descriptive Results
 
@@ -83,7 +83,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+the P-value is 0.0000001242 < 0.05 so we reject $H_O$
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+In conclusion the placebo is more effective then the drug so we reject the null hypothesis because the p-value is 0.0000001242 which is smaller than p<0.05
+
